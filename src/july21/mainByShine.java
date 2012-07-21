@@ -1,6 +1,5 @@
 package july21;
-
-public class HelloWorld {
+public class mainByShine {
 
 	/**
 	 * @param args
