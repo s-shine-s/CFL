@@ -23,9 +23,17 @@ public class ConstellationByShine {
 		System.out.println("-----------------星 座 运 势------------------");
 		for(int i=0;i<consteList.length;i++){
 			System.out.println(consteList[i] + "	" 
-					+ "运势: " + (int)( Math.random()*5+1) + "星" + " \t"
+					+ "运势: " + starOut()+  " \t"
 					+ "建议: " + adviceList[(int)(Math.random()*adviceList.length)] );
 		}
+	}
+	private static String starOut(){
+		int num=(int)(Math.random()*5+1);
+		String star="";
+		for(int i=0;i<num;i++){
+			star+="★";
+		}
+		return star;
 	}
 
 }
